@@ -1,0 +1,8 @@
+<view class="bj">
+  <view class="con">
+    <view class="top">
+      <text class="top-title">你是什么垃圾</text>
+      <text class="top-more">一键查询免烦恼,从我做起爱环保</text>
+    </view>
+  </view>
+</view>

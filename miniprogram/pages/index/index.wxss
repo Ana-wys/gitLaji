@@ -1,0 +1,20 @@
+
+.con{
+  position: relative;
+  top: 80rpx;
+}
+.top{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-top:150rpx;
+}
+.top-title{
+  font-size:80rpx;
+  font-weight: bold ;
+  padding: 10rpx;
+}
+.top-more{
+font-size: 32rpx;
+}
