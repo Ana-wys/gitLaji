@@ -1,0 +1,18 @@
+<!--pages/im/room.wxml-->
+<view class="bj">
+  <view class="detail">
+    <view class="head">
+      <text class="name">{{list.name}}</text>
+      <text class="ccon">属性:"{{list.type}}"</text>
+    </view>
+  </view>
+  <view class="more">
+    <view class="more-title">湿垃圾分类指导</view>
+    <view class="more-item">
+      <text>{{list.explain}}</text>
+      <text>{{list.tip}}</text>
+      <text>{{list.contain}}</text>
+    </view>
+  </view>
+  <button class="btn" bindtap="getNo">关闭</button>
+</view>

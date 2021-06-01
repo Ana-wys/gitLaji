@@ -1,0 +1,52 @@
+/* pages/im/room.wxss */
+.detail{
+  position: relative;
+ 
+  left: 0;
+}
+.head{
+  padding-top: 180rpx;
+  padding-bottom: 50rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.name{
+  font-size:62rpx;
+  margin-bottom: 10rpx;
+}
+.ccon{
+  font-size: 78rpx;
+  font-weight: 800;
+}
+.more{
+ 
+  width: 88%;
+  margin: auto; 
+
+  background: #fff;
+  border-radius: 18rpx;
+  padding: 20rpx;
+}
+.more-title{
+  font-size: 40rpx;
+  padding: 18rpx;
+  font-weight: 600;
+  
+}
+.more-item text{
+  font-size: 34rpx;
+  display: block;
+  padding: 18rpx;
+}
+.btn{
+  
+  position: absolute;
+  bottom: 10rpx;
+  left: 50%;
+  transform:translateX(-50%);
+  color: #fff;
+  border: none;
+}

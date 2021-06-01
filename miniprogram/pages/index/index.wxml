@@ -5,4 +5,25 @@
       <text class="top-more">一键查询免烦恼,从我做起爱环保</text>
     </view>
   </view>
+  <view class="search">
+    <view class="search-main">
+      <icon type="search" size="22"></icon>
+      <input placeholder="请输入要查询的垃圾名称"
+      bindinput="getList"
+      ></input>
+    </view>
+    <view class="search-list"
+          wx:if="{{lists.length>0}}"
+    >
+      <text wx:for="{{lists}}" wx:key="index" bindtap="toDetil" data-title="{{item.name}}">{{item.name}}</text>
+      
+    </view>
+  </view>
+  <view class="hot">
+    <view class="hot-search">热门搜索:</view>
+    <view class="hot-item">
+      <text wx:for="{{tab}}" wx:key="{{index}}" bindtap="toDetil" data-title="{{item}}">{{item}}
+      </text>
+    </view>
+  </view>
 </view>

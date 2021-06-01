@@ -157,6 +157,6 @@ page {
 .bj{
   background: url(https://img0.baidu.com/it/u=2053306971,1709434101&fm=26&fmt=auto&gp=0.jpg);
   width: 100%;
-  height: 100vh;
+  height:100vh;
   background-size: 100% 100%;
 }
