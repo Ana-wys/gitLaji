@@ -1,4 +1,6 @@
 <view class="bj">
+ <view class="tx"><open-data type="userAvatarUrl" class="tl"></open-data></view>
+<open-data type="userNickName" class="cl"></open-data>
   <view class="con">
     <view class="top">
       <text class="top-title">你是什么垃圾</text>
@@ -11,6 +13,7 @@
       <input placeholder="请输入要查询的垃圾名称"
       bindinput="getList"
       ></input>
+      <image src="../../images/xj.png" alt="" class="tp" bindtap="getTp"></image>
     </view>
     <view class="search-list"
           wx:if="{{lists.length>0}}"
@@ -22,8 +25,9 @@
   <view class="hot">
     <view class="hot-search">热门搜索:</view>
     <view class="hot-item">
-      <text wx:for="{{tab}}" wx:key="{{index}}" bindtap="toDetil" data-title="{{item}}">{{item}}
+      <text wx:for="{{tab}}" wx:key="index" bindtap="toDetil" data-title="{{item}}">{{item}}
       </text>
     </view>
   </view>
+    
 </view>

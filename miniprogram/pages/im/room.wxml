@@ -7,7 +7,7 @@
     </view>
   </view>
   <view class="more">
-    <view class="more-title">湿垃圾分类指导</view>
+    <view class="more-title">{{list.type}}分类指导</view>
     <view class="more-item">
       <text>{{list.explain}}</text>
       <text>{{list.tip}}</text>

@@ -1,0 +1,16 @@
+<view class="bj">
+  <view class="img">
+    <image src="{{img}}" class="tp"></image>
+  </view>
+  <view class="bt">
+      <text class="name">检测结果为:"{{list.name}}"</text>
+      <text class="ccon">属性:"{{list.lajitype}}"</text>
+    </view>
+    <view class="more">
+    <view class="more-title">分类指导</view>
+    <view class="more-item">
+      <text>{{list.lajitip}}</text>
+    </view>
+  </view>
+  <button class="btn" bindtap="getNo">关闭</button>
+</view>

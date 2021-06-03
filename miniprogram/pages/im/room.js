@@ -30,7 +30,7 @@ Page({
                 lists2[i].type="可回收垃圾"
               }else if(lists2[i].type==2){
                 lists2[i].type="有害垃圾"
-              }else if(lists2[i].name==3){
+              }else if(lists2[i].type==3){
                 lists2[i].type="处于垃圾(湿)"
               }else{
                 lists2[i].type="其它垃圾(干)"
@@ -46,12 +46,10 @@ Page({
           console.log(err);
         }
       })
-      
   },
   getNo(){
-    wx.navigateTo({
-      url: `../index/index`,
-     
+    wx.navigateBack({
+      delta: 0,
     })
   },
   /**

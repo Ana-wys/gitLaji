@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -12,8 +11,8 @@
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
-   "pages/im/room"
-    
+   "pages/im/room",
+   "pages/im/img"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,5 +23,8 @@
     "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "requiredBackgroundModes":[
+    "audio"
+  ]
+  
 }

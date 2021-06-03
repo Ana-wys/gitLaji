@@ -4,6 +4,20 @@
   position: relative;
   top: 80rpx;
 }
+.tx{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  top: 100rpx;
+  left: 40rpx;
+  border-radius: 100rpx;
+  overflow: hidden;
+}
+.cl{
+  position: absolute;
+  top: 160rpx;
+  left:180rpx;
+}
 .top{
   display: flex;
   align-items: center;
@@ -77,4 +91,9 @@ width: 86%;
   font-size: 34rpx;
   margin:20rpx ;
   color: #fff;
+}
+.tp{
+  width: 56rpx;
+  height:56rpx;
+  margin-right: 20rpx;
 }

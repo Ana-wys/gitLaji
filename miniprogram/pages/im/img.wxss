@@ -1,0 +1,61 @@
+/* pages/im/img.wxss */
+.img{
+  position: relative;
+  top: 180rpx;
+  margin: auto;
+  width: 400rpx;
+  height: 25vh;
+  border-radius: 15rpx;
+}
+.tp{
+  margin: auto;
+  width: 400rpx;
+  height: 25vh;
+  border-radius: 15rpx;
+}
+.bt{
+  padding-top: 200rpx;
+  padding-bottom: 50rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.name{
+  font-size:42rpx;
+  margin-bottom: 10rpx;
+}
+.ccon{
+  font-size: 48rpx;
+  font-weight: 600;
+}
+.more{
+ 
+  width: 88%;
+  margin: auto; 
+
+  background: #fff;
+  border-radius: 18rpx;
+  padding: 20rpx;
+}
+.more-title{
+  font-size: 40rpx;
+  padding: 18rpx;
+  font-weight: 600;
+  
+}
+.more-item text{
+  font-size: 34rpx;
+  display: block;
+  padding: 18rpx;
+}
+.btn{
+  
+  position: absolute;
+  bottom: 10rpx;
+  left: 50%;
+  transform:translateX(-50%);
+  color: #fff;
+  border: none;
+}

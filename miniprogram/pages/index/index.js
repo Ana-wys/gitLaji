@@ -1,19 +1,36 @@
+const backgroundAudioManager = wx.getBackgroundAudioManager()
 Page({
-
   /**
    * 页面的初始数据
    */
+  //http://cdn5.lizhi.fm/audio/2017/09/14/2624423164343832582_hd.mp3
   data: {
       lists:[],
-      tab:["饼干","卫生巾","耳机","数据线","电池","避孕套","香蕉皮","湿纸巾","小龙虾","衣服","充电电池"]
+      tab:["饼干","卫生巾","耳机","数据线","电池","避孕套","香蕉皮","湿纸巾","小龙虾","衣服","充电电池"],
+      img:[],
+      canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-   
+    backgroundAudioManager.title = '此时此刻'
+    backgroundAudioManager.src = 'http://cdn5.lizhi.fm/audio/2017/07/22/2614425090367228934_hd.mp3'
+    var data=(new Date()).valueOf()
+    wx.getSetting({
+      success: function(res){
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function(res) {
+              console.log(res.userInfo)
+            }
+          })
+        }
+      }
+    })
+
+
     
   }, 
   getList(e){
@@ -39,7 +56,7 @@ Page({
           lists:res.data.data
           
         })
-       console.log(that.data.lists);
+       
       },
       fail:function(err){
         console.log(err);
@@ -50,19 +67,39 @@ Page({
  toDetil(e){ 
    let names=e.currentTarget.dataset.title
       console.log(e.currentTarget.dataset.title);
-     
       wx.navigateTo({
         url: `../im/room?titel=${names}`,
-       
       })
     },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function (e) {
     
   },
+  
+  getTp(){
+    let that=this
+   
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success (res) {
+        // tempFilePath可以作为i mg标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths);
+         wx.navigateTo({
+        url: `../im/img?titel=${tempFilePaths}`,
+    })
+      }
+    })
+   
+   
+  },
+getTx(){
 
+},
   /**
    * 生命周期函数--监听页面显示
    */
